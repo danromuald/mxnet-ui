@@ -48,7 +48,7 @@ shinyServer(function(input, output) {
     list(src = if (input$tabs == "Upload Image") {
       if (is.null(input$file1)) {
         if (input$goButton == 0 || is.null(ntext())) {
-          'cthd.jpg'
+          'skateboard_resized.jpg'
         } else {
           ntext()
         }
