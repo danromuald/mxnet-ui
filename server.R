@@ -48,7 +48,7 @@ shinyServer(function(input, output) {
     list(src = if (input$tabs == "Upload Image") {
       if (is.null(input$file1)) {
         if (input$goButton == 0 || is.null(ntext())) {
-          'skateboard_resized.jpg'
+          'dognCat.jpg'
         } else {
           ntext()
         }
@@ -58,7 +58,7 @@ shinyServer(function(input, output) {
     } else {
       if (input$goButton == 0 || is.null(ntext())) {
         if (is.null(input$file1)) {
-          'cthd.jpg'
+          'dognCat.jpg'
         } else {
           input$file1$datapath
         }
@@ -73,7 +73,7 @@ shinyServer(function(input, output) {
     src = if (input$tabs == "Upload Image") {
       if (is.null(input$file1)) {
         if (input$goButton == 0 || is.null(ntext())) {
-          'cthd.jpg'
+          'dognCat.jpg'
         } else {
           ntext()
         }
@@ -83,7 +83,7 @@ shinyServer(function(input, output) {
     } else {
       if (input$goButton == 0 || is.null(ntext())) {
         if (is.null(input$file1)) {
-          'cthd.jpg'
+          'dognCat.jpg'
         } else {
           input$file1$datapath
         }
