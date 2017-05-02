@@ -5,8 +5,8 @@ require(jpeg)
 require(png)
 
 shinyUI(pageWithSidebar(
-  headerPanel(title = 'Image Classification using MXNetR',
-              windowTitle = 'Image Classification using MXNetR'),
+  headerPanel(title = 'MXNet Pre-Trained Model Image Classification',
+              windowTitle = 'Image Classification Demo'),
   
   sidebarPanel(
     includeCSS('boot.css'),
@@ -17,7 +17,7 @@ shinyUI(pageWithSidebar(
       tabPanel(
         "Use the URL",
         textInput("url", "Image URL:", "http://"),
-        actionButton("goButton", "Go!")
+        actionButton("goButton", "Submit")
       )
     )
   ),
@@ -27,7 +27,7 @@ shinyUI(pageWithSidebar(
     tags$hr(),
     imageOutput("originImage", height = "auto"),
     tags$hr(),
-    h3("What is in it?"),
+    h3("Classes Observed (ordered by confidence level)"),
     tags$hr(),
     verbatimTextOutput("res")
   )
