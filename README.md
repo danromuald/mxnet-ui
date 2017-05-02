@@ -1,4 +1,4 @@
-# Image Classification using MXNetR
+# Image Classification (Demo) using R and MXNet
 
 To run this shiny app:
 
